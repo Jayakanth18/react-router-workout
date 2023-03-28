@@ -13,6 +13,7 @@ import Contact from "./Components/Contact"
 import ContactLayout from "./layouts/ContactLayout";
 import Mail from "./Components/Mail";
 import Phone from "./Components/Phone";
+import PageNotFound from './Components/PageNotFound'
 
 let Router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,7 @@ let Router = createBrowserRouter(
         <Route path="mail" element={<Mail />} /> 
         <Route path="phone" element={<Phone />} />
       </Route>
+      <Route path='*' element={<PageNotFound />} />
     </Route>
   )
 );

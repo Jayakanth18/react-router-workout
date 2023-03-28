@@ -15,8 +15,9 @@ function ContactLayout() {
         repellat ad porro cupiditate voluptatem, provident sit commodi laborum
         aperiam. Ipsa mollitia fugit aliquam debitis?
       </p>
-
+      <hr />
       <NavLink to='mail'>Mail Us</NavLink>
+      <br />
       <NavLink to='phone'>Call Us</NavLink>
       <Outlet />
     </div>
