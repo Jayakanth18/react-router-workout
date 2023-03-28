@@ -11,6 +11,7 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Contact from "./Components/Contact"
 import Careers from "./Components/Careers";
+import CareersLayout from "./layouts/CareersLayout"
 import ContactLayout from "./layouts/ContactLayout";
 import Mail from "./Components/Mail";
 import Phone from "./Components/Phone";
@@ -25,7 +26,9 @@ let Router = createBrowserRouter(
         <Route path="mail" element={<Mail />} /> 
         <Route path="phone" element={<Phone />} />
       </Route>
-      <Route path="careers" element={<Careers />} />
+      <Route path="careers" element={<CareersLayout />}>
+        <Route index element={<Careers />} />
+        </Route>
       <Route path='*' element={<PageNotFound />} />
     </Route>
   )
